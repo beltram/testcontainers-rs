@@ -12,7 +12,7 @@ pub use self::container_async::ContainerAsync;
 
 mod container;
 #[cfg(feature = "experimental")]
-mod container_async;
+pub mod container_async;
 pub mod env;
 mod image;
 

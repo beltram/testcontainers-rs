@@ -188,7 +188,7 @@ where
 /// This trait is `pub(crate)` to make sure we can make changes to this API without breaking clients.
 /// Users should interact through the [`ContainerAsync`] API.
 #[async_trait]
-pub(crate) trait DockerAsync
+pub trait DockerAsync
 where
     Self: Sync,
 {
